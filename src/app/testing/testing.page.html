@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Testing in Angular</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="testing-content">
+  <div class="container">
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
+
+    <h3>Importance of Testing</h3>
+    <ul>
+      <li *ngFor="let importance of importanceList">{{ importance }}</li>
+    </ul>
+
+    <h3>Types of Testing in Angular</h3>
+    <ol>
+      <li *ngFor="let type of testingTypes">{{ type }}</li>
+    </ol>
+
+    <h3>How to Write Tests</h3>
+    <p>{{ testingDescription }}</p>
+
+    <h3>Example of a Simple Test</h3>
+    <pre><code>{{ simpleTestExample }}</code></pre>
+
+    <ion-button expand="full" color="primary" routerLink="/home" class="return-button">
+      Return to Home
+    </ion-button>
+  </div>
+</ion-content>

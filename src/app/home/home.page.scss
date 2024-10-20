@@ -1,27 +1,28 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.home-content {
+  background: linear-gradient(135deg, #6b73ff, #000dff); /* Modern gradient background */
+  color: white; /* Text color for better contrast */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+ion-list {
   margin: 0;
+  padding: 0;
 }
 
-#container a {
-  text-decoration: none;
+ion-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Light background for list items */
+  border-radius: 10px; /* Rounded corners */
+  margin: 10px 0; /* Spacing between items */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+ion-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+}
+
+h2 {
+  font-weight: bold; /* Bold course titles */
+}
+
+p {
+  margin: 0; /* Remove default margin for descriptions */
 }

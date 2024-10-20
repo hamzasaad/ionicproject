@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+
+    <h2>When to Use Guards</h2>
+    <ul>
+      <li *ngFor="let useCase of whenToUse">
+        <ion-icon name="checkmark-circle-outline"></ion-icon> {{ useCase }}
+      </li>
+    </ul>
+
+    <h2>How Guards Work</h2>
+    <p>{{ howGuardsWork }}</p>
+
+    <h2>Example of an Auth Guard</h2>
+    <div class="code-snippet">
+      <code>{{ codeSnippet }}</code>
+    </div>
+
+    <ion-button expand="full" routerLink="/home" color="secondary">Back to Home</ion-button>
+  </div>
+</ion-content>

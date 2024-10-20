@@ -1,0 +1,30 @@
+ion-content {
+    background: linear-gradient(135deg, #6b73ff, #000dff); /* Modern gradient background */
+    color: white; /* Default text color to white for better contrast */
+  }
+  
+  .welcome-container {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;           /* Full height of the viewport */
+  }
+  
+  .centered-card {
+    width: 90%;              /* Width of the card */
+    max-width: 400px;       /* Set a max-width for better appearance on larger screens */
+    text-align: center;      /* Center text within the card */
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 12px;    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .modern-card ion-card-header {
+    background-color: #007bff; /* Modern header color */
+    color: rgb(255, 255, 255);              /* Text color for header */
+  }
+  
+  .modern-card ion-card-content {
+    color: #333;               /* Darker text color for content */
+  }
+  

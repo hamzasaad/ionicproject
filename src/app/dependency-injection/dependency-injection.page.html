@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+
+    <h2>Why Use Dependency Injection?</h2>
+    <ul>
+      <li *ngFor="let benefit of whyUseDI">
+        <ion-icon name="checkmark-circle-outline"></ion-icon> {{ benefit }}
+      </li>
+    </ul>
+
+    <h2>How Does It Work?</h2>
+    <p>{{ howItWorks }}</p>
+
+    <h2>Code Example</h2>
+    <div class="code-snippet">
+      <pre>{{ codeSnippet }}</pre>
+    </div>
+
+    <ion-button expand="full" routerLink="/home" color="secondary">Back to Home</ion-button>
+  </div>
+</ion-content>

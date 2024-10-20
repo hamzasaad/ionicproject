@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Learn About Components</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="learn-content">
+  <div class="container">
+    <h1>What is a Component?</h1>
+    <p>
+      In Angular, a component is a building block of the application. It controls a portion of the screen called a view. 
+      Each component consists of an HTML template, a CSS style sheet, and a TypeScript class that defines its behavior.
+    </p>
+    
+    <h2>Key Features of Components</h2>
+    <ul>
+      <li><strong>Encapsulation:</strong> Components encapsulate functionality and style, making them reusable.</li>
+      <li><strong>Data Binding:</strong> Components can bind data to their templates using Angular's powerful data-binding features.</li>
+      <li><strong>Lifecycle Hooks:</strong> Components have lifecycle hooks that allow you to tap into key events in the component lifecycle.</li>
+    </ul>
+    
+    <h2>Creating a Component</h2>
+    <p>
+      To create a component, use the Angular CLI command:
+      <code>ng generate component component-name</code>
+    </p>
+
+    <h2>Example Component</h2>
+    <pre><code>
+      {{codeSnippet}}
+    </code></pre>
+    
+    <h2>Styling Components</h2>
+    <p>
+      You can style components using their associated CSS file or by using Angular's style binding features.
+    </p>
+
+    <ion-button expand="full" routerLink="/home">Back to Home</ion-button>
+  </div>
+</ion-content>

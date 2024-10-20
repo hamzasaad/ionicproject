@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+
+    <h2>When to Use Pipes</h2>
+    <ul>
+      <li *ngFor="let usage of whenToUse">
+        <ion-icon name="checkmark-circle-outline"></ion-icon> {{ usage }}
+      </li>
+    </ul>
+
+    <h2>How Pipes Work</h2>
+    <p>{{ howPipesWork }}</p>
+
+    <h2>Example of a Custom Pipe</h2>
+    <div class="code-snippet">
+      <code>{{ codeSnippet }}</code>
+    </div>
+
+    <ion-button expand="full" routerLink="/home" color="secondary">Back to Home</ion-button>
+  </div>
+</ion-content>

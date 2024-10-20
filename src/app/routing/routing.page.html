@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+
+    <h2>When to Use Routing</h2>
+    <ul>
+      <li *ngFor="let useCase of whenToUse">
+        <ion-icon name="checkmark-circle-outline"></ion-icon> {{ useCase }}
+      </li>
+    </ul>
+
+    <h2>How Routing Works</h2>
+    <p>{{ howRoutingWorks }}</p>
+
+    <h2>Example of Routing Setup</h2>
+    <div class="code-snippet">
+      <code>{{ codeSnippet }}</code>
+    </div>
+
+    <ion-button expand="full" routerLink="/home" color="secondary">Back to Home</ion-button>
+  </div>
+</ion-content>
